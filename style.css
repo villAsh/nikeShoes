@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+:root{
+    --black: #2c2c54;
+    --orange: #ff9f1a;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #fff;
+    padding: .2rem 9px;
+    box-shadow: 0 .5rem  2rem rgba(0,0,0,.2);
+}
+header .navbar-brand{
+  font-size: 2rem;
+  margin-left: 5rem;
+  color: var(--black);
+}
+header .collapse a{
+    font-size: 1.2rem;
+    color: var(--black) !important;
+}
+header .navbar-nav a:hover{
+    color: var(--orange) !important;
+    transition: all .4s linear;
+}
+header .collapse .icons .fas{
+    margin: 0 .4rem;
+}
+header .collapse .icons .fa-heart:hover{
+    color: red;
+}
+header .collapse .icons .fa-shopping-cart:hover{
+ color: blue;
+}
+section .row-content .col-md-6{
+    padding: 0px 9%;
+    padding-top: 9rem;
+    margin-top: 50px;
+}
+section .row-content .col-md-6 .img-fluid{
+    width: 100%;
+    margin-bottom: 100px;
+    transform: rotate(-35deg);
+    -webkit-transform: rotate(-35deg);
+    -moz-transform: rotate(-35deg);
+    -ms-transform: rotate(-35deg);
+    -o-transform: rotate(-35deg);
+}
+section .row-content .col-md-6 span{
+    color: var(--orange);
+    font-size: 1.8rem;
+}
+section .row-content .col-md-6 h3{
+    font-size: 2rem;
+    color: var(--black);
+}
+section .row-content .col-md-6 p{
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.btn{
+    background-color: #fff;
+    color: var(--black);
+    font-weight: bolder;
+    font-size: 1.5rem;
+    padding: .5rem 1.5rem;
+    margin-top: 1.3rem;
+    border: 2px solid var(--black);
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: var(--orange);
+    color: #fff;
+}
+section .carousel-item:nth-child(1){
+  background: url(./images/home-bg-1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+section .carousel-item:nth-child(2){
+    background: url(./images/home-bg-2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  section .carousel-item:nth-child(3){
+    background: url(./images/home-bg-3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  /**************CAROUSEL************/
+
+ .carousel-control-prev-icon,
+ .carousel-control-next-icon{
+    background-color: var(--black);
+    opacity: 0.8;
+}
+.carousel-control-prev-icon:hover,
+ .carousel-control-next-icon:hover{
+     background-color: var(--orange);
+ }
+ .carousel-control-next-icon{
+     margin-right: -5rem;
+ }
+ .carousel-control-prev-icon{
+     margin-left: -5rem;
+ }
+
+ /*************card section**********/
+ section .card-container{
+     background-color: #e9ecef;
+     border-radius: 0.4rem;
+     padding-bottom: 100px;
+   /*  box-shadow: 0 .3rem 2rem rgba(0,0,0,.3);*/
+ }
+ section .card-container .card{
+     border: none;
+ }
+ section .card-container .card:hover{
+     border: 3px solid var(--orange);
+     transition: all 0.1s ease-out;
+ }
+ section .card-container a{
+     text-decoration: none;
+     color: var(--orange);
+ }
+ section .card-container h4{
+    color: var(--black);
+    font-size: 1.8rem;
+ }
+ section .card-container p{
+    font-size: .9rem;
+    color: #666;
+ }
+ /************products **********/
+ section h1{
+     text-transform: uppercase;
+     color: var(--black);
+     text-align: center;
+     font-weight: bolder;
+     padding: 3rem;
+
+ }
+ section span{
+    text-transform: uppercase;
+    color: var(--orange);
+ }
+ #products .card img{
+     border: none;
+     margin-bottom: 40px;
+     margin-top: 80px;
+     transform: rotate(-35deg);
+ }
+ #products .card{
+     margin-bottom: 20px;
+ }
+ #products .card i{
+     color: var(--orange);
+ }
+ #products .card:hover img{
+    transform: scale(.8);
+    transition: all .4s linear;
+ }
+ /*************featured products************/
+ section h2,h3{
+    color: var(--black);
+    text-align: left;
+    font-weight: bolder;
+ }
+ section .logos{
+     color: var(--orange);
+ }
+ section p{
+     color: #666;
+     padding: 1rem 0;
+ }
+ 
+ #featured .row{
+     padding: 2rem;
+     border: 1px solid #e9ecef;
+ }
+/********footer*********/
+
+ footer h5{
+    color: #666;
+    padding-top: 10px;
+ }
+ footer section{
+     padding: 18px;
+     border: 2px solid #e9ecc5;
+     background-color: #e9ecef;
+ }
+ footer .row .col-12 h5{
+     cursor: pointer;
+ }
+
+ @media(max-width:365px){
+    html{
+        font-size: 56%;
+    }
+ }
